@@ -83,7 +83,7 @@ SWAGGER_SETTINGS = {
         'delete',
         'patch'
     ],
-    'DEFAULT_INFO': 'test0905.urls.swagger_info',
+    'DEFAULT_INFO': 'auto_test_platform.urls.swagger_info',
 }
 
 # 设置允许的headers。以下是默认值
@@ -121,6 +121,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'auto_test_platform.urls'
 
+AUTH_USER_MODEL = 'my_user.UserList'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -146,7 +148,7 @@ WSGI_APPLICATION = 'auto_test_platform.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test_auto',
+        'NAME': 'auto_test',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',

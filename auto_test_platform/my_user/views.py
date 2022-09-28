@@ -1,4 +1,4 @@
-from auto_test_platform.my_user.models import UserList, UserRole, UserDetail
+from my_user.models import UserList, UserRole, UserDetail
 from rest_framework import mixins, generics
 
 
